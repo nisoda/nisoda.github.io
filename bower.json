@@ -1,0 +1,22 @@
+{
+  "name": "nisoda.github.io",
+  "version": "0.0.0",
+  "homepage": "https://github.com/nisoda/nisoda.github.io",
+  "authors": [
+    "nisoda"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.5"
+  },
+  "devDependencies": {
+    "angular-ui-router": "ui-router#~0.2.15"
+  }
+}

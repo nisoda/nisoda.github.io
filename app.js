@@ -2,4 +2,8 @@
  * Created by Naoki on 9/15/2015.
  */
 
-angular.module('nisoda.github.io', []);
+var app = angular.module('nisoda.github.io', []);
+
+app.controller('MainController', ['$scope', function($scope) {
+    $scope.hello = "Welcome!";
+}]);

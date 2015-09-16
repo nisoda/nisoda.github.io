@@ -15,7 +15,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script src="bower_components/angular/angular.min.js"></script>
 </head>
-	<body>
+	<body ng-controller="MainController">
 		<nav class="navbar navbar-default">
 			<div class="contianer-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
@@ -39,7 +39,8 @@
 			</div>
 		</nav>
 		<div>
-			<h1> My first angular app will be a {{ 5 + 5 }}!</h1>
+			<h1>My first angular app will be a {{ 5 + 5 }}!</h1>
+			<h2>I'd also like to say {{ hello }}</h2>
 		</div>
 	</body>
 	<script src="app.js"></script>

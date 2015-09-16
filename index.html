@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="nisoda.github.io">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,13 +9,11 @@
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
+	<script src="bower_components/angular/angular.min.js"></script>
 </head>
 	<body>
 		<nav class="navbar navbar-default">
@@ -39,42 +37,10 @@
 					</ul>
 				</div>
 			</div>
-
 		</nav>
-		<div class="row">
-			<div class="col-xs-3 pull-left">
-				<img class="thumbnail pull-right" height="350px" src="resources/seniorpic.jpg"/>
-			</div>
-			<div class="col-xs-9">
-				<div class="row">
-					<div class="col-xs-12">
-						<h1>Nicole Isoda</h1>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12">
-						<h2>I am a software developer and mathemagician</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-5">
-						<h5>I'm currently a student at the University of Hawai'i at Manoa.
-							I am pursuing a Bachelors of Science in Mathematics, a Bachelors
-							of Science in Computer Science, and a Certificate in French.</h5>
-					</div>
-					<div class="col-xs-5">
-						<h5>This is my third attempt at building my personal website, from scratch. Like a
-							good homecooked meal, the recipe has to be refined continuously until
-							a satisfaction is achieved. Yum.</h5>
-					</div>
-					<div></div>
-				</div>
-				<div class="row">
-					<div class="col-xs-10">
-						<h3 style="text-align: center">Also, I like food. And Pandas.</h3>
-					</div>
-				</div>
-			</div>
+		<div>
+			<h1> My first angular app will be a {{ 5 + 5 }}!</h1>
 		</div>
 	</body>
+	<script src="app.js"></script>
 </html>

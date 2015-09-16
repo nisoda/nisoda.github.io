@@ -14,6 +14,7 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 </head>
 	<body ng-controller="MainController">
 		<nav class="navbar navbar-default">
@@ -26,14 +27,14 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">Nicole Isoda</a>
+					<a class="navbar-brand" ui-sref="home">Nicole Isoda</a>
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li><a href="modules/resume/resume.html">Resume</a></li>
-						<li><a href="modules/contact/contact.html">Contact Me</a></li>
+						<li><a ui-sref="resume">Resume</a></li>
+						<li><a ui-sref="contact">Contact Me</a></li>
 					</ul>
 				</div>
 			</div>
@@ -42,6 +43,8 @@
 			<h1>My first angular app will be a {{ 5 + 5 }}!</h1>
 			<h2>I'd also like to say {{ hello }}</h2>
 		</div>
+		<div ui-view></div>
 	</body>
 	<script src="app.js"></script>
+	<script src="routes.js"></script>
 </html>

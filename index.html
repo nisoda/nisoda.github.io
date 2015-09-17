@@ -15,8 +15,11 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script src="bower_components/angular/angular.min.js"></script>
 	<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="app.js"></script>
+	<script src="routes.js"></script>
 </head>
 	<body ng-controller="MainController">
+		<!-- TODO put navbar into its own module? -->
 		<nav class="navbar navbar-default">
 			<div class="contianer-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
@@ -39,12 +42,6 @@
 				</div>
 			</div>
 		</nav>
-		<div>
-			<h1>My first angular app will be a {{ 5 + 5 }}!</h1>
-			<h2>I'd also like to say {{ hello }}</h2>
-		</div>
 		<div ui-view></div>
 	</body>
-	<script src="app.js"></script>
-	<script src="routes.js"></script>
 </html>
